@@ -7,7 +7,7 @@
 function getAllNames(people) {
   let nameArr = [];
   for (let i = 0; i < people.length; i++) {
-    // console.log(people[i].name);
+    //console.log(people[i].name);
     // console.log("++++++++++++++++++++++++++");
     nameArr.push(people[i].name);
   }
@@ -55,7 +55,7 @@ function getPeopleUnder25(people) {
 function getPeopleWithGmail(people) {
   let hasEmail = [];
   for (let i = 0; i < people.length; i++) {
-    if (people[i].email) {
+    if (people[i].email.includes("gmail.com")) {
       hasEmail.push(people[i]);
     }
   }
